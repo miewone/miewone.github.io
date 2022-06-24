@@ -13,18 +13,18 @@ redirect_from:
 {:toc}
 <!--author-->
 
+## 강의
 
-* 강의
 {:toc}
 ### 동아대 건축공학과 프로그래밍 강의
-* 동아대
+
 {:toc}
 ![강의사진](/assets/img/blog/lecture.png){:.lead width="720" height="650" loading="lazy"}
 ## 취득 자격증
-* 자격증
+
 {:toc}
 
 ### Certified Kubernetes Administrator
-* cka
+
 {:toc}
 ![cka](/assets/img/blog/cka.PNG){:.lead width="720" height="650" loading="lazy"}
