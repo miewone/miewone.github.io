@@ -13,7 +13,7 @@ redirect_from:
 
 <!--author-->
 
-## Hydejack
+## 취득 자격증
 
 A boutique Jekyll theme for hackers, nerds, and academics.  
 {:.lead}
