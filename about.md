@@ -28,3 +28,7 @@ redirect_from:
 
 {:toc}
 ![cka](/assets/img/blog/cka.PNG){:.lead width="720" height="650" loading="lazy"}
+
+## 3. 이수 교육
+![대상](/assets/img/blog/educationCerfitied.png){:width="400" height="300"}
+![대상](/assets/img/blog/educationfinish.png){:width="400" height="300"}
