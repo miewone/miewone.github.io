@@ -53,6 +53,8 @@ menu:
     url:               /example/
   - title:             Documentation
     url:               /docs/
+  - title:             Posts
+    url:               /posts/
   - title:             About
     url:               /about/
 
