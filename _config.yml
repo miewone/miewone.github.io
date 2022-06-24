@@ -49,10 +49,10 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Post
-    url:               /post/
-  - title:             Crate
-    url:               /create/
+  - title:             Example
+    url:               /example/
+  - title:             Documentation
+    url:               /docs/
   - title:             About
     url:               /about/
 
