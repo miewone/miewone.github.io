@@ -32,5 +32,7 @@ redirect_from:
 ## 3. 이수 교육
 
 {:toc}
+
+### 부산정보산업인력육선 사업 대상
 ![대상](/assets/img/blog/educationCerfitied.png){:width="400" height="300"}
 ![대상](/assets/img/blog/educationfinish.png){:width="400" height="300"}
