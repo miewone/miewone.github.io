@@ -1,7 +1,7 @@
 category :
   - name : posts
     subcategory :
-    - title : Cloud
+    - title : cloud
     - title : Backend
     - title : frontend
   - name : Projects
