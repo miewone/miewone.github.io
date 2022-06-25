@@ -31,9 +31,9 @@
   left: 20%;
   position: absolute;
   background-color: rgb(34,31,32);
-  border-radius: 5px;
+  border-radius: 1px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  width: 80rem;
+  width: 10rem;
   z-index: 2;
   ul{
     margin: 0;
@@ -43,3 +43,55 @@
 .submenu.menu-wrapper.hide{
   display: none;
 }
+.sidebar-sticky {
+  position: relative;
+  z-index: 3;
+  max-width: $sidebar-width;
+  padding: 3rem;
+  contain: content;
+}
+.sidebar-about .avatar {
+
+  width: 13rem;
+  height: 13rem;
+  border-radius: 100%;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar a:hover {
+  border-bottom-color: #2879ff;
+  text-decoration-color: #2879ff;
+}
+
+// 야간모드
+body {
+  color: white;
+}
+
+.note, .toc-show li a, .note-sm{
+  color: snow;
+}
+.flip-title, .post ul li a{
+  color: #a0a1a7;
+}
+html {
+  --body-bg : #333333;
+}
+
+hy-push-state a {
+  color: #c8c6c6;
+  transition: color 250ms, text-decoration-color 250ms, border-color 250ms;
+}
+
+a.nav-btn:hover {
+  background-image: linear-gradient(69deg, rgba(0,0,0,0), rgb(243 243 243 / 5%));
+}
+
+//code {
+//  padding: .25em .5em;
+//  background-color: rgb(248 248 248 / 16%);
+//  font-size: smaller;
+//}

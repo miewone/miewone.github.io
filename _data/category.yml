@@ -9,6 +9,9 @@ category :
       link  : frontend
     - title : 자격증
       link  : certificated
+    - title : 알고리즘
+      link  : algorithm
+
   - name : Projects
 
 
