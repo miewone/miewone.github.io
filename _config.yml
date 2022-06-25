@@ -53,8 +53,6 @@ menu:
     url:               /posts/
   - title:             Projects
     url:               /Projects/
-  - title:             Cloud
-    url:               /cloud/
   - title:             About
     url:               /about/
 
