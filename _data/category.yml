@@ -1,9 +1,14 @@
 category :
   - name : posts
     subcategory :
-    - title : cloud
+    - title : Cloud
+      link  : cloud
     - title : Backend
-    - title : frontend
+      link  : backend
+    - title : Frontend
+      link  : frontend
+    - title : 자격증
+      link  : certificated
   - name : Projects
 
 
