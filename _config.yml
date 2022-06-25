@@ -52,7 +52,9 @@ menu:
   - title:             Posts
     url:               /posts/
   - title:             Projects
-    url:               /projects/
+    url:               /Projects/
+  - title:             Cloud
+    url:               /cloud/
   - title:             About
     url:               /about/
 
@@ -144,7 +146,7 @@ defaults:
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
   - scope:
-      type:            projects
+      type:            Projects
     values:
       seo:
         type:          WebPage
@@ -234,7 +236,7 @@ hydejack:
   # Set to `true` if you don't like oversized headlines on large screens.
   no_large_headings:   false
 
-  # Set to `true` if you do not want to expose your resume and projects
+  # Set to `true` if you do not want to expose your resume and Projects
   # in machine-readable formats.
   no_structured_data:  false
 
@@ -299,7 +301,7 @@ collections:
     output:            true
 
   projects:
-    permalink:         /projects/:path/
+    permalink:         /Projects/:path/
     output:            true
 
 

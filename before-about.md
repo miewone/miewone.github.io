@@ -55,7 +55,7 @@ Hydejack is all static sites. _HTML_. All you need is a web server --- any web s
 ## An Impressive Portfolio
 A portfolio that's guaranteed to be impressive — no matter what you put into it.
 
-<!--projects-->
+<!--Projects-->
 
 
 ## A Printable Resume

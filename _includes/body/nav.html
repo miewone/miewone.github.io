@@ -3,10 +3,8 @@
 
 
     <!-- 메뉴 각각을 식별하기위한 인덱스 -->
-<!--    {{ site.data.category.category.name}}-->
-
     <li>
-        <div class="menu-wrapper" onmouseover="javascript:spread(9)" onmouseout="javascript:spread(9)">
+        <div class="menu-wrapper" onmouseover="javascript:spread(99)" onmouseout="javascript:spread(99)">
             <!-- submenu 변수는 _config.yml 에서 추가합니다 -->
 
             <a
@@ -22,153 +20,49 @@
         </div>
     </li>
 
+    {% assign titles = site.data.category.category %}
+    {% for titlez in titles %}
+        {% assign count = count | plus: 1 %}
+        <li>
+            <div class="menu-wrapper" onmouseover="javascript:spread({{count}})" onmouseout="javascript:spread({{count}})">
+                <!-- submenu 변수는 _config.yml 에서 추가합니다 -->
+                {% if titlez.subcategory %}
+                <button class="spread-btn">
+                    <!-- marterial stylesheet를 my-head.html에 추가합니다 -->
+                    <span id="spread-icon-{{count}}" class="material-icons">arrow_right</span>
+                </button>
+                {%endif%}
+                <a
 
-    <!-- 메뉴 각각을 식별하기위한 인덱스 -->
+                        href="/{{titlez.name}}/"
+                        class="sidebar-nav-item "
 
-    <li>
-        <div class="menu-wrapper" onmouseover="javascript:spread(10)" onmouseout="javascript:spread(10)">
-            <!-- submenu 변수는 _config.yml 에서 추가합니다 -->
+                >
+                    {{titlez.name}}
+                </a>
 
-            <a
+                {% if titlez.subcategory %}
 
-                    href="/project/"
-                    class="sidebar-nav-item "
+                        <div id="submenu-{{count}}" class="menu-wrapper submenu hide">
+                            <ul style="list-style: none;">
+                                {% assign subtitles = titlez.subcategory %}
+                                {% for subtitle in subtitles %}
+                                <li>
+                                    <a
+                                            class="sidebar-nav-item "
+                                            href="/{{subtitle.title}}/"
+                                    >
+                                        {{ subtitle.title }}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
 
-            >
-                Project
-            </a>
-
-
-        </div>
-    </li>
-
-    <!-- 메뉴 각각을 식별하기위한 인덱스 -->
-
-    <li>
-        <div class="menu-wrapper" onmouseover="javascript:spread(12)" onmouseout="javascript:spread(12)">
-            <!-- submenu 변수는 _config.yml 에서 추가합니다 -->
-
-            <!-- spread 함수는 js 파일로 작성하고 my-head.html에 추가합니다 -->
-            <!-- spread-btn class는 my-style.scss에 추가합니다. -->
-            <button class="spread-btn">
-                <!-- marterial stylesheet를 my-head.html에 추가합니다 -->
-                <span id="spread-icon-12" class="material-icons">arrow_right</span>
-            </button>
-
-            <a
-
-                    href="/posts/"
-                    class="sidebar-nav-item "
-
-            >
-                Posts
-            </a>
-
-
-            <div id="submenu-12" class="menu-wrapper submenu hide">
-                <ul style="list-style: none;">
-
-                    <li>
-                        <a
-                                class="sidebar-nav-item "
-                                href="/githubpages/"
-                        >
-                            GithubPages
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                                class="sidebar-nav-item "
-                                href="/library/"
-                        >
-                            Library
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                                class="sidebar-nav-item "
-                                href="/mldl/"
-                        >
-                            ML/DL
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                                class="sidebar-nav-item "
-                                href="/class/"
-                        >
-                            Class
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                                class="sidebar-nav-item "
-                                href="/blog-etc/"
-                        >
-                            blog-etc
-                        </a>
-                    </li>
-
-                </ul>
+                {% endif %}
             </div>
+        </li>
 
-        </div>
-    </li>
-
-
-    <!-- 메뉴 각각을 식별하기위한 인덱스 -->
-
-    <li>
-        <div class="menu-wrapper" onmouseover="javascript:spread(13)" onmouseout="javascript:spread(13)">
-            <!-- submenu 변수는 _config.yml 에서 추가합니다 -->
-
-            <!-- spread 함수는 js 파일로 작성하고 my-head.html에 추가합니다 -->
-            <!-- spread-btn class는 my-style.scss에 추가합니다. -->
-            <button class="spread-btn">
-                <!-- marterial stylesheet를 my-head.html에 추가합니다 -->
-                <span id="spread-icon-13" class="material-icons">arrow_right</span>
-            </button>
-
-            <a
-
-                    href="/etc/"
-                    class="sidebar-nav-item "
-
-            >
-                Etc
-            </a>
-
-
-            <div id="submenu-13" class="menu-wrapper submenu hide">
-                <ul style="list-style: none;">
-
-                    <li>
-                        <a
-                                class="sidebar-nav-item "
-                                href="/diary/"
-                        >
-                            Diary
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                                class="sidebar-nav-item "
-                                href="/travel/"
-                        >
-                            Travel
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-
-        </div>
-    </li>
-
+    {% endfor %}
 
 </ul>
