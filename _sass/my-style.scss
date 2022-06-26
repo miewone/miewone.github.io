@@ -66,7 +66,9 @@
   text-decoration-color: #2879ff;
 }
 
-// 야간모드
+.post-title a {
+  color : whitesmoke;
+}
 body {
   color: white;
 }
@@ -78,20 +80,36 @@ body {
   color: #a0a1a7;
 }
 html {
-  --body-bg : #333333;
+  --body-bg : #121212;
 }
 
-//hy-push-state a {
-//  color: #c8c6c6;
-//  transition: color 250ms, text-decoration-color 250ms, border-color 250ms;
-//}
-//
-//a.nav-btn:hover {
-//  background-image: linear-gradient(69deg, rgba(0,0,0,0), rgb(243 243 243 / 5%));
-//}
-//
-////code {
-////  padding: .25em .5em;
-////  background-color: rgb(248 248 248 / 16%);
-////  font-size: smaller;
-////}
+hy-push-state a {
+  color: #c8c6c6;
+  transition: color 250ms, text-decoration-color 250ms, border-color 250ms;
+}
+.h4 a:hover {
+  color: white;
+  transition: white 250ms, text-decoration-color 250ms, border-color 250ms;
+}
+a.nav-btn:hover {
+  background-image: linear-gradient(69deg, rgba(0,0,0,0), rgba(0,0,0,0.5));
+}
+
+code {
+  padding: 0.25em 0.5em;
+  background-color: #fbfbfbb3;
+  font-size: smaller;
+  color: black;
+  border-radius: 1em;
+  font-weight: bold;
+}
+
+pre>code {
+  display: inline-block;
+  position: relative;
+  min-width: 100%;
+  padding: 0;
+  background-color: #1e1e1e;
+  font-size: 1em;
+  color: #d4e6f1;
+}
