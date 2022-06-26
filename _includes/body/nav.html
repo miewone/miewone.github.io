@@ -1,25 +1,14 @@
 <span class="sr-only">Navigation:</span>
 <ul>
-
     <div style="text-align: center;margin: 10%">
-        <img
-                src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiewone%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiewone%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
     </div>
-    <!-- 메뉴 각각을 식별하기위한 인덱스 -->
+
     <li>
         <div class="menu-wrapper" onmouseover="javascript:spread(99)" onmouseout="javascript:spread(99)">
-            <!-- submenu 변수는 _config.yml 에서 추가합니다 -->
-
-            <a
-                    id="_drawer--opened"
-                    href="/about/"
-                    class="sidebar-nav-item "
-
-            >
+            <a id="_drawer--opened" href="/about/" class="sidebar-nav-item " >
                 About
             </a>
-
-
         </div>
     </li>
 
@@ -28,18 +17,14 @@
     {% assign count = count | plus: 1 %}
     <li>
         <div class="menu-wrapper" onmouseover="javascript:spread({{count}})" onmouseout="javascript:spread({{count}})">
-            <!-- submenu 변수는 _config.yml 에서 추가합니다 -->
             {% if titlez.subcategory %}
             <button class="spread-btn">
-                <!-- marterial stylesheet를 my-head.html에 추가합니다 -->
                 <span id="spread-icon-{{count}}" class="material-icons">arrow_right</span>
             </button>
             {%endif%}
             <a
-
                     href="/{{titlez.name}}/"
                     class="sidebar-nav-item "
-
             >
                 {{titlez.name}}
             </a>
@@ -61,11 +46,8 @@
                     {% endfor %}
                 </ul>
             </div>
-
             {% endif %}
         </div>
     </li>
-
     {% endfor %}
-
 </ul>

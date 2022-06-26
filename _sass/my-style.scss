@@ -43,6 +43,8 @@
 .submenu.menu-wrapper.hide{
   display: none;
 }
+
+// 다크 테마
 .sidebar-sticky {
   position: relative;
   z-index: 3;
@@ -112,4 +114,13 @@ pre>code {
   background-color: #1e1e1e;
   font-size: 1em;
   color: #d4e6f1;
+}
+// .toc-show li a, .note-sm, #markdown-toc
+.note, blockquote{
+  color: snow;
+  background-image: linear-gradient(272deg, rgba(0,0,0,0), #6a6a6aad);
+}
+//#post-cloud-\[GCP\]\ 방화벽 > table:nth-child(17) > tbody > tr:nth-child(2)
+.post table tbody  {
+  background: #1e1e1e;
 }
