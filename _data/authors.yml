@@ -8,8 +8,7 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    현재는 클라우드 회사에서 클라우드 엔지니어로 활동하고 있고 주로 사용하는 CSP 는 GCP 입니다.
-    개발에도 많은 관심을 가지고 인프라 운용 기술을 접속히켜 계속해서 공부와 작업을 진행할 예정입니다.
+    클라우드 엔지니어, 항상 더 편리한 방법을 찾고 있습니다!
     
 #    Open `_data/authors.yml` to edit this text.
 
@@ -27,7 +26,7 @@ author1:
   social:
 #    twitter:         <username>
     github:          miewone
-    # email:           <mail@domain.tld>
+    email:           miewone@kakao.com
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
