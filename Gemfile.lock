@@ -11,7 +11,8 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     execjs (2.8.1)
-    ffi (1.15.5-x64-mingw-ucrt)
+    ffi (1.15.5)
+    ffi (1.15.5-x64-unknown)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
     i18n (1.10.0)
@@ -92,16 +93,12 @@ GEM
       ffi (~> 1.9)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    tzinfo (2.0.4)
-      concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2022.1)
-      tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
-    wdm (0.1.1)
     webrick (1.7.0)
 
 PLATFORMS
-  x64-mingw-ucrt
+  ruby
+  x64-unknown
 
 DEPENDENCIES
   duktape
@@ -121,8 +118,6 @@ DEPENDENCIES
   jekyll-theme-hydejack (~> 9.1)
   jekyll-titles-from-headings
   kramdown-math-katex
-  tzinfo-data
-  wdm
   webrick
 
 BUNDLED WITH
