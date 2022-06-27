@@ -1,5 +1,6 @@
 category :
   - name : posts
+    link : posts
     subcategory :
     - title : Cloud
       link  : cloud
@@ -13,6 +14,6 @@ category :
       link  : algorithm
 
   - name : Projects
-
+    link : projects
 
 
