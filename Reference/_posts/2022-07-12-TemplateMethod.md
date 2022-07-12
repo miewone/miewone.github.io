@@ -164,4 +164,3 @@ Cat 클래스는 Animal을 상속받아와 추상 메서드를 재정의합니�
 # Reference
 
 - [heejeong Kwon- [Design Pattern] 템플릿 메서드 패턴이란](https://gmlwjd9405.github.io/2018/07/13/template-method-pattern.html)
-- [heejeong Kwon- [Design Pattern] 팩토리 메서드 패턴이란](https://gmlwjd9405.github.io/2018/08/07/factory-method-pattern.html)

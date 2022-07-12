@@ -25,3 +25,4 @@ hide_last_modified: false
 
 [TemplateMethodPattern](/reference/2022-07-10-TemplateMethod)
 
+- [heejeong Kwon- [Design Pattern] 팩토리 메서드 패턴이란](https://gmlwjd9405.github.io/2018/08/07/factory-method-pattern.html)
