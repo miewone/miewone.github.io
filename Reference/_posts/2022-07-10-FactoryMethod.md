@@ -19,11 +19,15 @@ hide_last_modified: false
 
 객체 생성 처리를 서브 클래스로 분리 해 처리하도록 캡슐화 하는 패턴입니다.
 
-우선 팩토리 메서드를 알기전 템플릿 메서드를 알고 시작하는게 이해하기 편했으므로 템플릿 메서드 먼저 설명하도록 하겠습니다.
+우선 팩토리 메서드를 알기전 아래 디자인 패턴을 알고 시작하는게 이해하기 편했으므로 먼저 설명하도록 하겠습니다.
 
 ## Template Method Pattern
 
 [TemplateMethodPattern](/reference/2022-07-10-TemplateMethod)
+
+## Strategy Pattern
+
+[StrategyPattern](/reference/2022-07-19-StrategyPattern)
 
 # Factory Method Pattern
 
