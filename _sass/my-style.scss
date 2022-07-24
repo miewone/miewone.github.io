@@ -105,7 +105,9 @@ code {
   border-radius: 1em;
   font-weight: bold;
 }
-
+.content img{
+  background: whitesmoke;
+}
 pre>code {
   display: inline-block;
   position: relative;
@@ -125,6 +127,3 @@ pre>code {
   background: #1e1e1e;
 }
 
-.content img{
-  background: whitesmoke;
-}
