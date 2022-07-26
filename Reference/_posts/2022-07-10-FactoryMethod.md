@@ -95,3 +95,4 @@ class DogFactory extends AnimalFactory{
 
 # References
 - [heejeong Kwon- [Design Pattern] 팩토리 메서드 패턴이란](https://gmlwjd9405.github.io/2018/08/07/factory-method-pattern.html)
+- [팩토리 메서드 패턴 - Youtube - 코드없는 프로그래밍](https://www.youtube.com/watch?v=ejXUhFKcbIU&list=PLDV-cCQnUlIYcAmW4j27i8aYPbja9HePm&index=3)
