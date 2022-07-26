@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Factory Method 
+title: Singletone 패턴 
 description: >
- 게시판 만들기 프로젝트를 진행하며 자세히 알지 못하는 부분에 대한 공부 중 팩토리 메서드 대한 공부 내용
+ 게시판 만들기 프로젝트를 진행하며 자세히 알지 못하는 부분에 대한 공부 중 싱글톤 패턴 대한 공부 내용
 sitemap: true
 hide_last_modified: false
 ---
@@ -15,7 +15,7 @@ hide_last_modified: false
 
 
 
-# Singleton Method
+# Singleton 패턴
 
 어디서든지 객체를 하나만이 존재해야할때 사용하는 디자인 패턴 중 하나입니다.
 

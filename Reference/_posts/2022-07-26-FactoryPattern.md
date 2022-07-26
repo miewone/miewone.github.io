@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Factory Method 
+title: Factory 패턴 
 description: >
- 게시판 만들기 프로젝트를 진행하며 자세히 알지 못하는 부분에 대한 공부 중 팩토리 메서드 대한 공부 내용
+ 게시판 만들기 프로젝트를 진행하며 자세히 알지 못하는 부분에 대한 공부 중 팩토리 패턴 대한 공부 내용
 sitemap: true
 hide_last_modified: false
 ---
