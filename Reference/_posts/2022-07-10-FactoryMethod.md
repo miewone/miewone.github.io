@@ -38,6 +38,18 @@ hide_last_modified: false
   - 상황에 따라 적절한 객체를 생성하는 코드는 자주 중복될 수 있습니다.
 
 
+## 역할
+
+- Product: 
+팩토리 메서드로 생성될 객체의 공통 인터페이스
+- ConcreteProduct :
+구체적으로 객체가 생성되는 클래스
+- Creator :
+팩토리 메서드를 갖는 클래스
+- ConcreteCretor :
+팩토리 메서드를 구현하는 클래스로 ConcreteProduct 객체를 생성
+
+
 이번 강의에서 나온 팩토리 메서드를 이용하는 코드입니다.
 
 ```java
