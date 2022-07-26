@@ -29,7 +29,19 @@ hide_last_modified: false
 
 [StrategyPattern](/reference/2022-07-19-StrategyPattern)
 
+## Factory Pattern 
+
+[FactoryPattern](/reference/2022-07-26-FactoryPattern)
+
 # Factory Method Pattern
+
+팩토리 패턴의 확장판입니다. 기존의 팩토리 패턴에서 원하는 기능을 추가할 수 있습니다.   
+오브젝트를 만들어내는 메서드에 상속이 되어 있는가, 클래스 안에 팩토리 메서드가 있는가가 중요합니다.
+
+팩토리 패턴에서는 팩토리에서 클라이언트가 원하는 객체를 생성해 줬다면 팩토리 메서드 패턴은 객체를 생성할 때 객체의 각 각의 
+팩토리가 존재합니다. 각 각의 팩토리에는 팩토리 Interface가 존재하며 그 안에는 팩토리 메소드가 들어 있습니다. 
+
+각 각의 팩토리는 interface 팩토리의 팩토리 메소드를 상속하며 각 팩토리에서 추가하고 싶은 기능을 넣으면 팩토리 메서드 패턴이 됩니다.
 
 객체 생성 처리를 서브 클래스로 분리 해 처리하도록 캡슐화 하는 패턴
 - 객체의 생성 코드를 별도의 클래스/메서드로 분리함으로써 **객체 생성의 변화**에 대비하는데 유용합니다.
@@ -50,18 +62,35 @@ hide_last_modified: false
 팩토리 메서드를 구현하는 클래스로 ConcreteProduct 객체를 생성
 
 
-이번 강의에서 나온 팩토리 메서드를 이용하는 코드입니다.
-
 ```java
-private Article(String title,String content,String hashtag){
-    this.title=title;
-    this.content=content;
-    this.hashtag=hashtag;
+public abstract class AnimalFactory {
+    abstract Animal createAnimal();
 }
 
-public static Article of(String title,String content,String hashtag){
-    return new Article(title,content,hashtag);
+class CatFactory extends AnimalFactory{
+    private int count=0;
+    public CatFactory(){
+        this.count += 1;
+    }
+    public Cat createAnimal(){
+        return new Cat();
+    }
+    public int getCount(){
+        return this.count;
+    }
+
 }
+class DogFactory extends AnimalFactory{
+    private Dog dog = null;
+    
+    public Dog createAnimal(){
+        return new Dog();
+    }
+    public Dog haveDog(){
+        return this.dog;
+    }
+}
+
 ```
 
 # References
