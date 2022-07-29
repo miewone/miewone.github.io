@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Spring Property
+title: Java final
 description: >
- 게시판 만들기 프로젝트를 진행하며 자세히 알지 못하는 부분에 대한 공부 중 Spring property에 대한 공부 내용
+ 게시판 만들기 프로젝트를 진행하며 자세히 알지 못하는 부분에 대한 공부 중 Java final에 대한 공부 내용
 sitemap: true
 hide_last_modified: false
 ---
